@@ -1,0 +1,66 @@
+{
+	"window-manager": {
+		"keys": {
+		    "alt+enter": "shell alacritty",
+		    "alt+shift+enter": "shell chromium",
+		    "alt+a": "split horizontal",
+		    "alt+d": "shell dolphin",
+		    "alt+e": "window float",
+		    "alt+q": "window close",
+		    "alt+r": "mode clean",
+		    "alt+s": "split vertical",
+		    "alt+t": "mode flex",
+		    "alt+w": "window fullscreen",
+			"alt+up": "window-focus up",
+			"alt+right": "window-focus right",
+			"alt+left": "window-focus left",
+			"alt+down": "window-focus down",
+			"alt+shift+up": "window-move up",
+			"alt+shift+right": "window-move right",
+			"alt+shift+left": "window-move left",
+			"alt+shift+down": "window-move down",
+			"alt+1": "space-focus 1",
+			"alt+2": "space-focus 2",
+			"alt+3": "space-focus 3",
+			"alt+4": "space-focus 4",
+			"alt+shift+1": "space-move 1",
+			"alt+shift+2": "space-move 2",
+			"alt+shift+3": "space-move 3",
+			"alt+shift+4": "space-move 4",
+		},
+		"spaces": {
+			"1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+		},
+		"mode": {
+			"clean": {
+				"keys": {
+					"esc": "mode main",
+				},
+			},
+			"flex": {
+				"if": {
+					"up": "window-size -10vertical",
+					"right": "window-size +10horizontal",
+					"left": "window-size -10horizontal",
+					"down": "window-size +10vertical",
+					"esc": "mode main",
+				},
+			},
+		},
+		"gap": {
+			"inner": "16",
+		},
+		"for": {
+			"window-is+Chromium": "space-move 2"
+		},
+	},
+	"bar": {
+		"font": "12",
+	},
+	"functions": {
+		"my-custom-function": "shell alacritty ",
+	},
+}
